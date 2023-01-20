@@ -21,6 +21,27 @@ img = Image.open('スプラトゥーン3.jpg')
 if st.checkbox('check'):
     st.image(img,caption='スプラトゥーン',use_column_width=True)
 
-left_column,right_column = st.beta_columns(2)
+left_column,right_column = st.columns(2)
 left_column.image(img,caption='スプラトゥーン',use_column_width=True)
 right_column.image(img,caption='スプラトゥーン',use_column_width=True)
+
+expander = st.expander('連投')
+expander.image(img,caption='スプラトゥーン',use_column_width=True)
+expander.image(img,caption='スプラトゥーン',use_column_width=True)
+expander.image(img,caption='スプラトゥーン',use_column_width=True)
+expander.image(img,caption='スプラトゥーン',use_column_width=True)
+
+"""
+# あ
+## あ
+### あ
+#### あ
+##### あ
+###### あ
+####### あ  
+**あ**  
+"""
+
+st.title('あ')
+st.header('あ')
+st.subheader('あ')
