@@ -8,12 +8,13 @@ plt.rcParams['font.family'] = 'Meiryo'
 import streamlit as st
 from PIL import Image
 
-anaban = pd.read_csv('data_csv/anaban.csv')
-bton = pd.read_csv('data_csv/bton.csv')
-hauru = pd.read_csv('data_csv/hauru.csv')
-lovesong = pd.read_csv('data_csv/lovesong.csv')
-mani = pd.read_csv('data_csv/ma-ni-.csv')
-violet = pd.read_csv('data_csv/violet.csv')
+anaban = pd.read_csv('data_csv/あなたの番です.csv')
+violet = pd.read_csv('data_csv/ヴァイオレットエヴァーガーデン.csv')
+baton = pd.read_csv('data_csv/そしてバトンは渡された.csv')
+hauru = pa.read_csv('data_csv/ハウルの動く城.csv')
+pirates = pd.read_csv('data_csv/パイレーツオブカリビアン_呪われた海賊たち.csv')
+mani = pd.read_csv('data_csv/思い出のマーニー.csv')
+lovesong = pd.read_csv('data_csv/天使にラブ・ソングを.csv')
 
 st.title('映画を観た感情の起伏')
 
