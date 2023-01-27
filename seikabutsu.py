@@ -39,7 +39,7 @@ expander.image(img,caption='スプラトゥーン',use_column_width=True)
 ##### あ
 ###### あ
 ####### あ  
-**あ**  
+**い**  
 """
 
 st.title('あ')
