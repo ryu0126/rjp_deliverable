@@ -7,8 +7,6 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.family'] = 'Meiryo'
 import streamlit as st
 from PIL import Image
-import oseti
-analyzer = oseti.Analyzer()
 
 anaban = pd.read_csv('data_csv/あなたの番です.csv',parse_dates=["時間"])
 violet = pd.read_csv('data_csv/ヴァイオレットエヴァーガーデン.csv',parse_dates=["時間"])
@@ -33,13 +31,3 @@ expander.image(img,caption='スプラトゥーン',use_column_width=True)
 expander.image(img,caption='スプラトゥーン',use_column_width=True)
 expander.image(img,caption='スプラトゥーン',use_column_width=True)
 expander.image(img,caption='スプラトゥーン',use_column_width=True)
-
-# 投稿内容の感情スコアを返す関数を定義
-def sentimentize(text, analyzer=analyzer):
-    # 文単位の感情スコアを取得
-    sent_list = analyzer.analyze(text)
-    # 感情スコアの平均値を取得
-    sent_score = sum(sent_list) / len(sent_list)
-    return sent_score
-analyzer.word_dict
-analyzer.wago_dict
